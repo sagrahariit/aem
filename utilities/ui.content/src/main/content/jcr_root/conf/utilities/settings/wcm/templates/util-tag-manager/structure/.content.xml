@@ -3,33 +3,17 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
-        cq:lastModified="{Date}2019-05-25T23:10:46.917-07:00"
+        cq:lastModified="{Date}2019-05-25T23:46:49.770-07:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/utilities/settings/wcm/templates/util-tag-manager"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="utilities/components/structure/page">
         <root
-            jcr:lastModified="{Date}2019-05-25T23:02:37.862-07:00"
+            jcr:lastModified="{Date}2019-05-25T23:49:02.145-07:00"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/responsivegrid">
-            <title
-                jcr:created="{Date}2019-05-25T23:04:25.033-07:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2019-05-25T23:04:36.219-07:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                jcr:title="Tag Manager"
-                sling:resourceType="utilities/components/content/title"/>
-            <tagmanager
-                cq:tags="[we-retail:gender,we-retail:activity,we-retail:apparel,we-retail:season,we-retail:equipment,we-retail:commonly-asked-question]"
-                jcr:created="{Date}2019-05-25T23:08:15.491-07:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2019-05-25T23:10:46.911-07:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="utilities/components/content/tagmanager"/>
-        </root>
+            sling:resourceType="wcm/foundation/components/responsivegrid"
+            editable="{Boolean}true"/>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
                 <phone

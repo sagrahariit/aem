@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2019-05-25T23:03:41.406-07:00"
+        cq:lastModified="{Date}2019-05-25T23:50:00.009-07:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/utilities/settings/wcm/templates/util-tag-manager"
         jcr:primaryType="cq:PageContent"
         jcr:title="Util Tag Manager"
-        sling:resourceType="utilities/components/structure/page"/>
+        sling:resourceType="utilities/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <tagmanager
+                cq:tags="[we-retail:activity,we-retail:apparel,we-retail:gender,we-retail:season,we-retail:equipment]"
+                jcr:created="{Date}2019-05-25T23:49:41.845-07:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-05-25T23:50:00.007-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="utilities/components/content/tagmanager"/>
+        </root>
+    </jcr:content>
 </jcr:root>

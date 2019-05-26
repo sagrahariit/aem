@@ -139,4 +139,5 @@
         <image/>
     </jcr:content>
     <util-tag-manager/>
+    <download-assets/>
 </jcr:root>

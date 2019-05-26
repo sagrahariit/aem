@@ -23,10 +23,10 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>utilities.core</artifactId>
+    <artifactId>utilities.utility.core</artifactId>
     <packaging>bundle</packaging>
     <name>Shailesh Agrahari Utilities - Core</name>
-    <description>Core bundle for Shailesh Agrahari Utilities</description>
+    <description>Core bundle for UTILITIES - Shailesh Agrahari Utilities</description>
     <build>
         <plugins>
             <plugin>
@@ -42,7 +42,7 @@
                         <!-- Import any version of javax.inject, to allow running on multiple versions of AEM -->
                         <Import-Package>javax.inject;version=0.0.0,*</Import-Package>
                         <Sling-Model-Packages>
-                            aemutilities.core
+                            aemutilities.utility.core
                         </Sling-Model-Packages>
                     </instructions>
                 </configuration>

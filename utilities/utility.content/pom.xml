@@ -30,10 +30,10 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>utilities.ui.content</artifactId>
+    <artifactId>utilities.utility.content</artifactId>
     <packaging>content-package</packaging>
     <name>Shailesh Agrahari Utilities - UI content</name>
-    <description>UI content package for Shailesh Agrahari Utilities</description>
+    <description>UI Utilities content package for Shailesh Agrahari Utilities</description>
 
     <!-- <scm>
         <connection></connection>
@@ -103,7 +103,7 @@
                     <embeddeds>
 						<embedded>
 							<groupId>shailesh-agrahari-utilities</groupId>
-							<artifactId>utilities.ui.content</artifactId>
+							<artifactId>utilities.utility.content</artifactId>
 							<target>/apps/utilities/install</target>
 						</embedded>
 					</embeddeds>
@@ -117,13 +117,17 @@
     <!-- D E P E N D E N C I E S                                                -->
     <!-- ====================================================================== -->
     <dependencies>
-        <dependency>
+    <dependency>
             <groupId>shailesh-agrahari-utilities</groupId>
             <artifactId>utilities.core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
         <dependency>
+            <groupId>shailesh-agrahari-utilities</groupId>
+            <artifactId>utilities.utility.core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+  <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>uber-jar</artifactId>
             <classifier>apis</classifier>

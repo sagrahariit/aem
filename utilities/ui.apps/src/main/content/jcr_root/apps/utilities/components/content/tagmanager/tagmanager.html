@@ -1,0 +1,9 @@
+<!--/*
+   @author - Shailesh Agrahari
+*/-->
+<p data-sly-test="${properties.text}">Text property: ${properties.text}</p>
+Tags
+<pre data-sly-use.hello="aemutilities.core.GetTaggingTestTag" data-sly-list="${hello.tagCountBean}">
+Title: ${item.tag.title}
+Count: ${item.usageCount}
+Path: ${item.tag.path}

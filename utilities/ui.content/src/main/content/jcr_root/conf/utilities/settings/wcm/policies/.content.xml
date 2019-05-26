@@ -9,10 +9,12 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <content-default
                         jcr:description="Policy for editable layout containers"
+                        jcr:lastModified="{Date}2019-05-25T23:02:30.772-07:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="utilities-internal Default"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[group:AEM Utilities,/apps/utilities/components/form/container]"
+                        components="[/apps/utilities/components/content/text,/apps/utilities/components/content/title,group:Util - AEM Utilities Internal]"
                         policyResourceType="wcm/foundation/components/responsivegrid">
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">

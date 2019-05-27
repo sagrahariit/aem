@@ -11,7 +11,7 @@ import com.adobe.granite.workflow.exec.WorkItem;
 import com.adobe.granite.workflow.exec.WorkflowProcess;
 import com.adobe.granite.workflow.metadata.MetaDataMap;
 
-@Component (service=WorkflowProcess.class, property= {"process.lable = Shailesh Agrahari Logger Process"})
+@Component (service=WorkflowProcess.class, property= {"process.label=Logger Process"})
 public class LoggerProcess implements WorkflowProcess {
 	
 	private static final Logger log = LoggerFactory.getLogger(LoggerProcess.class);

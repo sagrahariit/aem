@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <segments/>
+    <templates/>
+    <policies
+        jcr:created="{Date}2019-05-26T02:45:24.368-07:00"
+        jcr:createdBy="admin"
+        jcr:primaryType="nt:unstructured">
+        <wcm jcr:primaryType="nt:unstructured">
+            <foundation jcr:primaryType="nt:unstructured">
+                <components jcr:primaryType="nt:unstructured">
+                    <responsivegrid jcr:primaryType="nt:unstructured">
+                        <policy_1558880071199
+                            jcr:lastModified="{Date}2019-05-26T07:15:32.143-07:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Default Component"
+                            sling:resourceType="wcm/core/components/policy/policy"
+                            components="[/libs/foundation/components/text,/libs/foundation/components/textimage]">
+                            <jcr:content jcr:primaryType="nt:unstructured"/>
+                        </policy_1558880071199>
+                    </responsivegrid>
+                </components>
+            </foundation>
+        </wcm>
+        <apps jcr:primaryType="nt:unstructured">
+            <spa-wbx jcr:primaryType="nt:unstructured">
+                <components jcr:primaryType="nt:unstructured">
+                    <structure jcr:primaryType="nt:unstructured">
+                        <page jcr:primaryType="nt:unstructured">
+                            <policy_1558879889370
+                                jcr:description="apps.spa.wbx"
+                                jcr:lastModified="{Date}2019-05-26T07:12:48.340-07:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Mobile Emulator Grid CSS"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                clientlibs="[apps.spa.wbx,]">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                            </policy_1558879889370>
+                        </page>
+                    </structure>
+                </components>
+            </spa-wbx>
+        </apps>
+    </policies>
+    <template-types/>
+</jcr:root>

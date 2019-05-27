@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/conf/utilities" mode="merge"/>
+     <filter root="/conf/spa-wbx" mode="merge"/>
+     <filter root="/conf/aarav" mode="merge"/>
     <filter root="/content/utilities" mode="merge"/>
     <filter root="/content/dam/utilities" mode="merge"/>
 </workspaceFilter>

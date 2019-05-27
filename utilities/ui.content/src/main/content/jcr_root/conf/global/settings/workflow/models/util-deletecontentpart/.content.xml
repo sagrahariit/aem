@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/libs/settings/wcm/designs/default"
+        cq:lastModified="{Date}2019-05-27T01:15:28.364-07:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Util DeleteContentPart"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <initiatorparticipant
+                jcr:created="{Date}2016-12-14T08:11:19.175-05:00"
+                jcr:createdBy="admin"
+                jcr:description="Description of step 1"
+                jcr:lastModified="{Date}2016-12-14T08:11:45.152-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Step 1"
+                sling:resourceType="cq/workflow/components/workflow/initiatorparticipantchooser">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    DYNAMIC_PARTICIPANT="/libs/workflow/scripts/initiator-participant-chooser.ecma"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </initiatorparticipant>
+            <deletenodeprocess
+                jcr:created="{Date}2019-05-27T01:06:32.310-07:00"
+                jcr:createdBy="admin"
+                jcr:description="A process to delete the given payload node"
+                jcr:lastModified="{Date}2019-05-27T01:06:32.310-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Delete Node"
+                sling:resourceType="cq/workflow/components/workflow/deletenodeprocess">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="/libs/workflow/scripts/delete.ecma"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </deletenodeprocess>
+            <loggerprocess
+                jcr:created="{Date}2019-05-27T01:08:35.824-07:00"
+                jcr:createdBy="admin"
+                jcr:description="Logs workflow values to the log"
+                jcr:lastModified="{Date}2019-05-27T01:15:28.339-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Logger Process"
+                sling:resourceType="utilities/components/workflow/loggerprocess">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    argSingle="ShaileshTestDeletion"
+                    PROCESS="com.shailesh.agrahari.core.workflow.touchuidialog.LoggerProcess"
+                    PROCESS_AUTO_ADVANCE="true"
+                    startdate="{Date}2019-05-27T01:13:00.000-07:00"/>
+            </loggerprocess>
+        </flow>
+    </jcr:content>
+</jcr:root>

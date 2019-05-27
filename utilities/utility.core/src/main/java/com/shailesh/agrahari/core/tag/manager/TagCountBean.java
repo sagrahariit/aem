@@ -1,4 +1,4 @@
-package aemutilities.core;
+package com.shailesh.agrahari.core.tag.manager;
 
 import com.day.cq.tagging.Tag;
 
